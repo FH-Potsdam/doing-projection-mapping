@@ -1,5 +1,5 @@
-Doing Papercraft
-================
+Doing Projection Mapping
+========================
 
 [![images/unfold.gif](images/unfold.gif)](images/unfold.gif)  
 
