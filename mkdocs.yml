@@ -1,0 +1,24 @@
+site_name: Doing Projection Mapping
+# Copyright
+copyright: Copyright (c) 2016 Fabian Morón Zirfas & University of Applied Sciences Potsdam (Germany)
+site_author: Fabian 'fabiantheblind' Morón Zirfas
+repo_url: https://github.com/FH-Potsdam/doing-projection-mapping
+site_url: http://fh-potsdam.github.io/doing-projection-mapping/
+repo_name: doing-projection-mapping
+site_description: This document is a write-down for a workshop @ the University of Applied Sciences Potsdam (Germany) as part of the seminar "Datenobjekte" (data objects) by Professor Boris Müller (a.k.a @borism on Twitter). We will explore the basic possibilities of projection mapping.
+site_favicon: favicon.ico
+
+pages:
+- Home: index.md
+- Workflows: workflows.md
+- Links: links.md
+theme: readthedocs
+extra_css: [extra.css]
+extra:
+  version: '0.1.0'
+markdown_extensions:
+  - toc:
+      permalink: True
+      baselevel: 5
+  - smarty
+  - admonition

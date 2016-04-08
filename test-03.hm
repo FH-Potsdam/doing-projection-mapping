@@ -1,0 +1,108 @@
+<!DOCTYPE sauvegarde>
+<Sequences>
+ <sequence nbbeat="2" id="0">
+  <shaders>
+   <shader mode="0" type="0" rightValue="80" name="Black and White" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="1" rightValue="80" name="Blue" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="2" rightValue="80" name="Blur" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="3" rightValue="80" name="Contrate" state="0" singleValue="79" leftValue="20"/>
+   <shader mode="0" type="4" rightValue="80" name="Convergence" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="5" rightValue="80" name="Cut Slider" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="6" rightValue="80" name="Glow" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="7" rightValue="80" name="Green" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="8" rightValue="80" name="Noise" state="0" singleValue="61" leftValue="20"/>
+   <shader mode="0" type="9" rightValue="80" name="Old Tv" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="10" rightValue="80" name="Red" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="11" rightValue="80" name="Shaker" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="12" rightValue="80" name="Strobe" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="13" rightValue="80" name="Swell" state="0" singleValue="50" leftValue="20"/>
+   <shader mode="0" type="14" rightValue="80" name="Twist" state="0" singleValue="50" leftValue="20"/>
+  </shaders>
+  <groups>
+   <group id="0">
+    <faces>
+     <face server="Processing Syphon" media="/Users/icke/Desktop/ptcls-h264-invert.mov" mode="1" type="4" id="0" ontop="0">
+      <point x="506.344" y="281.099"/>
+      <point x="650.5" y="293.675"/>
+      <point x="664.668" y="395.346"/>
+      <point x="486.436" y="386.3"/>
+     </face>
+     <face server="Processing Syphon 03" media="" mode="0" type="4" id="1" ontop="0">
+      <point x="466.045" y="376.497"/>
+      <point x="683.851" y="392.691"/>
+      <point x="738.147" y="580.008"/>
+      <point x="354.272" y="575.499"/>
+     </face>
+     <face type="1" id="2">
+      <point x="490.89" y="371.193"/>
+      <point x="581.559" y="291.44"/>
+      <point x="656.752" y="389.057"/>
+     </face>
+     <face type="1" id="3">
+      <point x="381.288" y="569.079"/>
+      <point x="490.89" y="371.193"/>
+      <point x="656.752" y="389.057"/>
+      <point x="715.549" y="571.219"/>
+     </face>
+     <face type="1" id="4">
+      <point x="616.478" y="284.435"/>
+      <point x="616.478" y="217.436"/>
+      <point x="831.006" y="176.772"/>
+      <point x="683.478" y="284.435"/>
+     </face>
+    </faces>
+    <borderPlain activated="0">
+     <color mode="0">
+      <colorSimple blue="55" red="255" green="55"/>
+      <colorLeft blue="81" red="255" green="78"/>
+      <colorRight blue="35" red="255" green="215"/>
+     </color>
+     <width mode="0" rightValue="10" singleValue="7" leftValue="1"/>
+    </borderPlain>
+    <borderLine direction="0" activated="0">
+     <color mode="0">
+      <colorSimple blue="255" red="255" green="255"/>
+      <colorLeft blue="81" red="255" green="78"/>
+      <colorRight blue="35" red="255" green="215"/>
+     </color>
+     <width mode="0" rightValue="10" singleValue="1" leftValue="1"/>
+     <speed mode="0" rightValue="80" singleValue="50" leftValue="20"/>
+    </borderLine>
+    <borderRepeat nbRepeat="5" activated="0">
+     <color mode="1">
+      <colorSimple blue="255" red="255" green="255"/>
+      <colorLeft blue="13" red="255" green="5"/>
+      <colorRight blue="46" red="255" green="217"/>
+     </color>
+     <width mode="0" rightValue="4" singleValue="4" leftValue="2"/>
+     <depth mode="0" rightValue="80" singleValue="80" leftValue="20"/>
+    </borderRepeat>
+    <fillingPlain mode="0" activated="1">
+     <colorSingle mode="0">
+      <colorSimple blue="255" red="255" green="255"/>
+      <colorLeft blue="81" red="255" green="78"/>
+      <colorRight blue="35" red="255" green="215"/>
+     </colorSingle>
+     <colorGradient directionX="3000" directionY="0">
+      <colorGrad1 blue="80" red="255" green="78"/>
+      <colorGrad2 blue="35" red="249" green="212"/>
+     </colorGradient>
+     <colorRandom nbColor="2">
+      <color blue="0" red="255" green="255"/>
+      <color blue="173" red="250" green="19"/>
+     </colorRandom>
+    </fillingPlain>
+    <fillingSpecial mode="1" activated="0" directionX="3000" directionY="0">
+     <variation mode="0" rightValue="100" singleValue="100" leftValue="0"/>
+     <speed mode="0" rightValue="100" singleValue="71" leftValue="17"/>
+    </fillingSpecial>
+    <fillingSnake direction="0" size="1" speed="0" activated="0">
+     <shapesID size="0"/>
+    </fillingSnake>
+    <move direction="1" rotX="1" rotY="0" activated="0" rotZ="0">
+     <speed mode="0" rightValue="80" singleValue="50" leftValue="20"/>
+    </move>
+   </group>
+  </groups>
+ </sequence>
+</Sequences>
