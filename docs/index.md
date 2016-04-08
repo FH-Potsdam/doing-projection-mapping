@@ -1,7 +1,7 @@
 Doing Projection Mapping
 ========================
 
-[![images/unfold.gif](images/unfold.gif)](images/unfold.gif)  
+![](splash.png)  
 
 ## Introduction  
 
@@ -11,9 +11,11 @@ This document is a write-down for a workshop by [Fabian Morón Zirfas](https://g
 
 ## Prerequisites  
 
-- a computer
-- a projector
+- a computer  
+- a projector  
 - Processing  
+- Processing Keystone library
+- Processing Syphon library
 - HeavyM  
 
 !!!note

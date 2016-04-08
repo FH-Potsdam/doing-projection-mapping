@@ -1,8 +1,6 @@
 Doing Projection Mapping
 ========================
 
-[![images/unfold.gif](images/unfold.gif)](images/unfold.gif)  
-
 ## Introduction  
 
 This document is a write-down for a workshop by [Fabian Morón Zirfas](https://github.com/fabiantheblind) @ [the University of Applied Sciences Potsdam (Germany)](http://www.fh-potsdam.de/) as part of the seminar ["Datenobjekte"](https://incom.org/workspace/6569) (data objects) by [Professor Boris Müller](https://incom.org/profil/99) (a.k.a [@borism](https://twitter.com/borism) on Twitter). We will explore the basics possibilites we have in the field of projection mapping. _This is still work in progress, there might be_ 🐛_,_ 🐉 _and_ 👾_._  

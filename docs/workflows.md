@@ -36,4 +36,5 @@ If you know how to program you have the possibility to use the Processing enviro
 
 This approach is also not that straight forward as using just one software tool but gives you endless possibilites of of combinations. Syphon and Spout are both technologies that allow applications to share live video or images directly via the GPU. There are a lot of Syphon/Spout enabled applications. For example Resolume, MadMapper, Millumin, After Effects and even libraries for Processing and openFrameworks.  
 
-Feel free to contribute any additional information about your workflow on the [issues of this repo](https://github.com/FH-Potsdam/doing-projection-mapping/issues).  
+!!!hint
+    Feel free to contribute any additional information about your workflow on the [issues of this repo](https://github.com/FH-Potsdam/doing-projection-mapping/issues).  

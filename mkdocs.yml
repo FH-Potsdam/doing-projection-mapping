@@ -11,7 +11,12 @@ site_favicon: favicon.ico
 pages:
 - Home: index.md
 - Workflows: workflows.md
+- HeavyM Beta: heavym-beta.md
+- HeavyM Live: heavym-live.md
+- Processing: processing.md
+- Syphon: syphon.md
 - Links: links.md
+
 theme: readthedocs
 extra_css: [extra.css]
 extra:
