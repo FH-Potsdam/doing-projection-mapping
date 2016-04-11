@@ -1,14 +1,11 @@
 There are several different workflows to map video, images or even effects onto objects. Unfortunately the top notch applications are pretty expensive and the open source applications are not that user friendly to use them in a workshop like this. Fortunatly we found an application called HeavyM which was baked by a Kickstarter campaign. They released a beta version of their application for free and will soon provide an extended verison for a reasonable price. For the hackers among us there are also other possibilites like Processing or openFrameworks or a combination of both with Syphon or Spout input output and what not.  
 
-Keep in mind that there are limitations we can't overcome.
-
-The depth of an object. A projector has only a limited range where the image is crisp. If you try to distort the projection to much it wont look good.  
-
-The computing power of your machine. To many inputs will spin up your CPU and GPU and everything will be slow.  
-
-The state of the HeavyM software. Even though HeavyM (Live) is good, it is still pretty young. There might be crashes from improper usage or bugs.  
-
-Triangles versus rectangles. 3D objects consist of a lot of triangles. Video or images are rectangular. That means you will have to plan accordingly to create quality distortions. Often it is usefull to distort or mask your image before mapping it onto an real object.  
+!!!note
+    __Keep in mind that there are limitations we can't overcome.__  
+    ☛ The depth of an object. A projector has only a limited range where the image is crisp. If you try to distort the projection to much it wont look good.  
+    ☛ The computing power of your machine. To many inputs will spin up your CPU and GPU and everything will be slow.  
+    ☛ The state of the HeavyM software. Even though HeavyM (Live) is good, it is still pretty young. There might be crashes from improper usage or bugs.  
+    ☛ Triangles versus rectangles. 3D objects consist of a lot of triangles. Video or images are rectangular. That means you will have to plan accordingly to create quality distortions. Often it is usefull to distort or mask your image before mapping it onto an real object.  
 
 ### Workflow HeavyM Beta  
 
@@ -32,7 +29,12 @@ If you know how to program you have the possibility to use the Processing enviro
 - Video + Graphics ⇒ Processing  
 - Processing ⇒ Object  
 
-### Workflow HeavyM Live + Syphon/Spout  
+### Workflow HeavyM Live + Syphon/Spout + ?  
+
+- Video Editor ⇒ Video (H264 compression works fine)  
+- Video + Graphics ⇒ Processing  
+- Processing ⇒ HeavyM  
+- HeavyM ⇒ Object  
 
 This approach is also not that straight forward as using just one software tool but gives you endless possibilites of of combinations. Syphon and Spout are both technologies that allow applications to share live video or images directly via the GPU. There are a lot of Syphon/Spout enabled applications. For example Resolume, MadMapper, Millumin, After Effects and even libraries for Processing and openFrameworks.  
 
