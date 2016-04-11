@@ -1,0 +1,90 @@
+<!DOCTYPE sauvegarde>
+<Sequences>
+ <sequence nbbeat="2" id="0">
+  <shaders>
+   <shader leftValue="20" rightValue="80" name="Black and White" singleValue="50" state="0" mode="0" type="0"/>
+   <shader leftValue="20" rightValue="80" name="Blue" singleValue="50" state="0" mode="0" type="1"/>
+   <shader leftValue="20" rightValue="80" name="Blur" singleValue="50" state="0" mode="0" type="2"/>
+   <shader leftValue="20" rightValue="80" name="Contrate" singleValue="50" state="0" mode="0" type="3"/>
+   <shader leftValue="20" rightValue="80" name="Convergence" singleValue="50" state="0" mode="0" type="4"/>
+   <shader leftValue="20" rightValue="80" name="Cut Slider" singleValue="50" state="0" mode="0" type="5"/>
+   <shader leftValue="20" rightValue="80" name="Glow" singleValue="50" state="0" mode="0" type="6"/>
+   <shader leftValue="20" rightValue="80" name="Green" singleValue="50" state="0" mode="0" type="7"/>
+   <shader leftValue="20" rightValue="80" name="Noise" singleValue="50" state="0" mode="0" type="8"/>
+   <shader leftValue="20" rightValue="80" name="Old Tv" singleValue="50" state="0" mode="0" type="9"/>
+   <shader leftValue="20" rightValue="80" name="Red" singleValue="50" state="0" mode="0" type="10"/>
+   <shader leftValue="20" rightValue="80" name="Shaker" singleValue="50" state="0" mode="0" type="11"/>
+   <shader leftValue="20" rightValue="80" name="Strobe" singleValue="50" state="0" mode="0" type="12"/>
+   <shader leftValue="20" rightValue="80" name="Swell" singleValue="50" state="0" mode="0" type="13"/>
+   <shader leftValue="20" rightValue="80" name="Twist" singleValue="50" state="0" mode="0" type="14"/>
+  </shaders>
+  <groups>
+   <group id="0">
+    <faces>
+     <face id="0" type="1">
+      <point x="393.603" y="563.447"/>
+      <point x="489.817" y="379.808"/>
+      <point x="660.514" y="391.579"/>
+      <point x="712.897" y="570.938"/>
+     </face>
+     <face id="1" type="1">
+      <point x="490.331" y="379.019"/>
+      <point x="577.283" y="292.103"/>
+      <point x="661.028" y="390.79"/>
+     </face>
+    </faces>
+    <borderPlain activated="1">
+     <color mode="0">
+      <colorSimple green="255" blue="255" red="255"/>
+      <colorLeft green="78" blue="81" red="255"/>
+      <colorRight green="215" blue="35" red="255"/>
+     </color>
+     <width leftValue="1" rightValue="10" singleValue="1" mode="0"/>
+    </borderPlain>
+    <borderLine activated="0" direction="0">
+     <color mode="0">
+      <colorSimple green="255" blue="255" red="255"/>
+      <colorLeft green="78" blue="81" red="255"/>
+      <colorRight green="215" blue="35" red="255"/>
+     </color>
+     <width leftValue="1" rightValue="10" singleValue="1" mode="0"/>
+     <speed leftValue="20" rightValue="80" singleValue="50" mode="0"/>
+    </borderLine>
+    <borderRepeat activated="0" nbRepeat="1">
+     <color mode="0">
+      <colorSimple green="255" blue="255" red="255"/>
+      <colorLeft green="78" blue="81" red="255"/>
+      <colorRight green="215" blue="35" red="255"/>
+     </color>
+     <width leftValue="2" rightValue="4" singleValue="1" mode="0"/>
+     <depth leftValue="20" rightValue="80" singleValue="80" mode="0"/>
+    </borderRepeat>
+    <fillingPlain activated="0" mode="0">
+     <colorSingle mode="0">
+      <colorSimple green="255" blue="255" red="255"/>
+      <colorLeft green="78" blue="81" red="255"/>
+      <colorRight green="215" blue="35" red="255"/>
+     </colorSingle>
+     <colorGradient directionX="3000" directionY="0">
+      <colorGrad1 green="78" blue="80" red="255"/>
+      <colorGrad2 green="212" blue="35" red="249"/>
+     </colorGradient>
+     <colorRandom nbColor="2">
+      <color green="255" blue="0" red="255"/>
+      <color green="19" blue="173" red="250"/>
+     </colorRandom>
+    </fillingPlain>
+    <fillingSpecial activated="0" directionX="3000" mode="0" directionY="0">
+     <variation leftValue="20" rightValue="80" singleValue="50" mode="0"/>
+     <speed leftValue="20" rightValue="80" singleValue="50" mode="0"/>
+    </fillingSpecial>
+    <fillingSnake activated="0" size="1" direction="0" speed="2">
+     <shapesID size="0"/>
+    </fillingSnake>
+    <move activated="0" rotX="0" rotY="0" rotZ="0" direction="0">
+     <speed leftValue="20" rightValue="80" singleValue="50" mode="0"/>
+    </move>
+   </group>
+  </groups>
+ </sequence>
+</Sequences>
