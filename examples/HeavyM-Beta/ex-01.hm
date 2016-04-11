@@ -1,0 +1,14 @@
+<!DOCTYPE Sructure>
+<Faces>
+ <face num="0">
+  <point x="320" y="86" z="0"/>
+  <point x="427" y="146" z="0"/>
+  <point x="249" y="194" z="0"/>
+ </face>
+ <face num="1">
+  <point x="249" y="194" z="0"/>
+  <point x="427" y="146" z="0"/>
+  <point x="450" y="315" z="0"/>
+  <point x="283" y="349" z="0"/>
+ </face>
+</Faces>

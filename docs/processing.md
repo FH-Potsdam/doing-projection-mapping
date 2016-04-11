@@ -51,6 +51,7 @@ Now you can distort your surface. Hit 'c' and you will get some handles at each 
 | l    | load scene      |
 | c    | edit cornerpins |
 
+![](images/cornerpin-keystone-distort-processing.png)  
 
 Thats mostly it. If you want to map several surfaces you just need to:  
 
@@ -60,11 +61,32 @@ Thats mostly it. If you want to map several surfaces you just need to:
 4. draw to your offscreen buffers
 5. add them all to the `surface.render(PGraphics)` command.  
 
-See the examples/Processing directory for some other sketches that use the library.  
+### Examples  
 
-- CornerPinVideo
-- MultiSurface
+In the repository you can find three examples for processing. To run them you need to [download](https://github.com/FH-Potsdam/doing-projection-mapping/archive/master.zip) the whole folder and open the .pde files in Processing. See the examples/Processing/Keystone directory for the sketches.  
 
+#### Ex. CornerPin
+
+This is the basic example taken from the Keystone library. It distorts one surface as explained above.  
+
+#### Ex. CornerPinVideo
+
+This example shows how to use a video inside of your surface. You can play/pause it by hitting "p".  
+
+![](images/cornerpin-keystone-video-processing.png)  
+
+| Key  | Description          |
+| :--- | :---                 |
+| s    | save scene           |
+| l    | load scene           |
+| c    | edit cornerpins      |
+| p    | play/pause the video |
+
+#### Ex. CornerPinMultiSurface
+
+The MultiSurface example shows the usage of two surfaces that build a corner. All the key strokes from the CornerPin examples apply.  
+
+![](cornerpin-keystone-multisurface-processing.png)  
 
 ### Reference  
 

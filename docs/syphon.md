@@ -1,0 +1,1 @@
+Syphon is a technology that allows applications to share frames. In our example we will use Processing to send simple animations to HeavyM.
