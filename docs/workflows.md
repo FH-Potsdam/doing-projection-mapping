@@ -1,4 +1,4 @@
-There are several different workflows to map video, images or even effects onto objects. Unfortunately the top notch applications are pretty expensive and the open source applications are not that user friendly to use them in a workshop like this. Fortunatly we found an application called HeavyM which was baked by a Kickstarter campaign. They released a beta version of their application for free and will soon provide an extended verison for a reasonable price. For the hackers among us there are also other possibilites like Processing or openFrameworks or a combination of both with Syphon or Spout input output and what not.  
+There are several different workflows to map video, images or even effects onto objects. Unfortunately the top notch applications are pretty expensive and the open source applications are not that user friendly to use them in a workshop like this. Fortunatly we found an application called [HeavyM](https://heavym.net/en/) which was baked by a Kickstarter campaign. They released a beta version of their application for free and will soon provide an extended verison for a reasonable price. For the hackers among us there are also other possibilites like Processing or openFrameworks or a combination of both with Syphon or Spout input output and what not.  
 
 !!!note
     __Keep in mind that there are limitations we can't overcome.__  
@@ -23,7 +23,7 @@ Using the Live version is a bit more sophistivated. You also can construct your 
 
 ### Workflow Processing  
 
-If you know how to program you have the possibility to use the Processing environment to create your scene. There is robust library called Keystone that allows you distort and map your output. There are some limitations to that. For example there is no triangular surface. All surfaces are rectangular. This way is not that simple as having a tool like HeavyM but opens up more possibilites. You could for example trigger animations from key strokes or even hack a keyboard to create step or touch triggers. Also using microcontrollers is a possibility. The sky is the limit for this.  
+If you know how to program you have the possibility to use the [Processing](https://processing.org/) environment to create your scene. There is robust library called [Keystone](http://keystonep5.sourceforge.net/) that allows you distort and map your output. There are some limitations to that. For example there is no triangular surface. All surfaces are rectangular. This way is not that simple as having a tool like HeavyM but opens up more possibilites. You could for example trigger animations from key strokes or even hack a keyboard to create step or touch triggers. Also using microcontrollers is a possibility. The sky is the limit for this.  
 
 - Video Editor ⇒ Video (H264 compression works fine)  
 - Video + Graphics ⇒ Processing  
@@ -32,11 +32,11 @@ If you know how to program you have the possibility to use the Processing enviro
 ### Workflow HeavyM Live + Syphon/Spout + ?  
 
 - Video Editor ⇒ Video (H264 compression works fine)  
-- Video + Graphics ⇒ Processing  
-- Processing ⇒ HeavyM  
+- Video + Graphics ⇒ Syphon/Spout enabled application (e.g. Processing)  
+- Syphon/Spout Server ⇒ HeavyM  
 - HeavyM ⇒ Object  
 
-This approach is also not that straight forward as using just one software tool but gives you endless possibilites of of combinations. Syphon and Spout are both technologies that allow applications to share live video or images directly via the GPU. There are a lot of Syphon/Spout enabled applications. For example Resolume, MadMapper, Millumin, After Effects and even libraries for Processing and openFrameworks.  
+This approach is also not that straight forward as using just one software tool but gives you endless possibilites of of combinations. [Syphon](http://syphon.v002.info/) and [Spout](http://spout.zeal.co/) are both technologies that allow applications to share live video or images directly via the GPU. There are a lot of Syphon/Spout enabled applications. For example Resolume, MadMapper, Millumin, After Effects and even libraries for Processing and openFrameworks. See their dedicated pages for a full listing of possible applications.  
 
 !!!hint
     Feel free to contribute any additional information about your workflow on the [issues of this repo](https://github.com/FH-Potsdam/doing-projection-mapping/issues).  
