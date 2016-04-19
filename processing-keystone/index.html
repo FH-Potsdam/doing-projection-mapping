@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Fabian 'fabiantheblind' Morón Zirfas">
+  
+  <title>Processing and Keystone - Doing Projection Mapping</title>
+  
+
+  <link rel="shortcut icon" href="../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Processing and Keystone";
+    var mkdocs_page_input_path = "processing-keystone.md";
+    var mkdocs_page_url = "/processing-keystone/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Doing Projection Mapping</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../workflows/">Workflows</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../heavym-beta/">HeavyM Beta</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../heavym-live/">HeavyM Live</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Processing and Keystone</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#basic-usage">Basic Usage</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#examples">Examples</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ex-cornerpin">Ex. CornerPin</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ex-cornerpinvideo">Ex. CornerPinVideo</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ex-cornerpinmultisurface">Ex. CornerPinMultiSurface</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#reference">Reference</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../processing-syphon/">Processing and Syphon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../qc-syphon/">Quartz Composer and Syphon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../links/">Links</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Doing Projection Mapping</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Processing and Keystone</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>To create a mapping from within processing we will use the <a href="http://keystonep5.sourceforge.net/">Keystone</a> library. Download and install Processing 3 and go to &ldquo;Sketch &gt; Import Library… &gt; Add Library&rdquo;. Search in the Library Manager for &ldquo;keystone&rdquo;. Hit install and restart Processing.  </p>
+<p><img alt="" src="../images/add-lib-processing.png" />  </p>
+<p>Now you should find under &ldquo;File &gt; Examples &gt; Contributed Libraries&rdquo; a folder called Keystone with an example called &ldquo;CornerPin&rdquo;. </p>
+<h6 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h6>
+<p>When running the CornerPin example you will get presented with a simple screen that contains rectangle with a green ellipse on it that follows the mouse (see the image). </p>
+<p><img alt="" src="../images/cornerpin-keystone-processing.png" />  </p>
+<p>First we need to adjust the size of the sketch to our projectors output. Look for following line and put in the width and height of your projector (in that order).</p>
+<pre><code>size(800, 600, P3D);
+</code></pre>
+<p>When running our sketch we now will get a window that fits our output. Run it as a fullscreen window by hitting the enlarge button on the top of it or start the sketch in presentation mode dirctly from Processing.  </p>
+<table>
+<thead>
+<tr>
+<th>Keycombo</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>⌘ + R</td>
+<td>runs the sketch</td>
+</tr>
+<tr>
+<td>⇧ + ⌘ + R</td>
+<td>runs the sketch in presentation mode</td>
+</tr>
+</tbody>
+</table>
+<p>The next parameter we need to adjust is the line that creates our corner pin surface. Look for the following line and change the values to a desired size or leave them as is. Depending on what your output should be.  </p>
+<pre><code>surface = ks.createCornerPinSurface(400, 300, 20);
+</code></pre>
+<p>The firs parameter is the <code>width</code>, the second the <code>height</code> and the third is the <code>resolution</code> of the surface. These values need to correspond with the next parameter we need to adjust. </p>
+<pre><code>offscreen = createGraphics(400, 300, P3D);
+</code></pre>
+<p>This is the size of the graphics we are going to generate within processing. We don&rsquo;t render anything directly into the window of the application. Instead the library takes a offscreen rendered graphic and distorts this in the cornerpin surface. That means every graphical output of Processing that we want to have distorted needs to be called as a child of the <code>offscreen</code> <code>PGraphics</code> object. See the <a href="https://processing.org/reference/createGraphics_.html">Processing reference</a> for further insight.<br />
+The following lines in the sketch get the transformed mouse position and add the graphical output to the offscreen buffer.  </p>
+<pre><code>PVector surfaceMouse = surface.getTransformedMouse();
+offscreen.beginDraw();
+offscreen.background(255);
+offscreen.fill(0, 255, 0);
+offscreen.ellipse(surfaceMouse.x, surfaceMouse.y, 75, 75);
+offscreen.endDraw();
+</code></pre>
+<p>Everything you want on your object needs to be between the lines <code>offscreen.beginDraw();</code> and <code>offscreen.endDraw();</code>. After that we send the <code>PGraphics</code> object to the Keystone surface and render it to the screen with the following line.  </p>
+<pre><code>surface.render(offscreen);
+</code></pre>
+<p>Now you can distort your surface. Hit &lsquo;c&rsquo; and you will get some handles at each corner. for convenience there are two other commands implemented. &lsquo;s&rsquo; saves your scene to a .xml file. &lsquo;l&rsquo; loads a scene from that file.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>save scene</td>
+</tr>
+<tr>
+<td>l</td>
+<td>load scene</td>
+</tr>
+<tr>
+<td>c</td>
+<td>edit cornerpins</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../images/cornerpin-keystone-distort-processing.png" />  </p>
+<p>Thats mostly it. If you want to map several surfaces you just need to:  </p>
+<ol>
+<li>create a PGraphics object for each surface</li>
+<li>create a CornerPinSurface object for each surface</li>
+<li>initialize them </li>
+<li>draw to your offscreen buffers</li>
+<li>add them all to the <code>surface.render(PGraphics)</code> command.  </li>
+</ol>
+<h6 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h6>
+<p>In the repository you can find three examples for processing. To run them you need to <a href="https://github.com/FH-Potsdam/doing-projection-mapping/archive/master.zip">download</a> the whole folder and open the .pde files in Processing. See the examples/Processing/Keystone directory for the sketches.  </p>
+<h6 id="ex-cornerpin">Ex. CornerPin<a class="headerlink" href="#ex-cornerpin" title="Permanent link">&para;</a></h6>
+<p>This is the basic example taken from the Keystone library. It distorts one surface as explained above.  </p>
+<h6 id="ex-cornerpinvideo">Ex. CornerPinVideo<a class="headerlink" href="#ex-cornerpinvideo" title="Permanent link">&para;</a></h6>
+<p>This example shows how to use a video inside of your surface. You can play/pause it by hitting &ldquo;p&rdquo;.  </p>
+<p><img alt="" src="../images/cornerpin-keystone-video-processing.png" />  </p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>save scene</td>
+</tr>
+<tr>
+<td>l</td>
+<td>load scene</td>
+</tr>
+<tr>
+<td>c</td>
+<td>edit cornerpins</td>
+</tr>
+<tr>
+<td>p</td>
+<td>play/pause the video</td>
+</tr>
+</tbody>
+</table>
+<h6 id="ex-cornerpinmultisurface">Ex. CornerPinMultiSurface<a class="headerlink" href="#ex-cornerpinmultisurface" title="Permanent link">&para;</a></h6>
+<p>The MultiSurface example shows the usage of two surfaces that build a corner. All the key strokes from the CornerPin examples apply.  </p>
+<p><img alt="" src="../images/cornerpin-keystone-multisurface-processing.png" />  </p>
+<h6 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h6>
+<p>For an deeper insight into the Keystone library. Go to <a href="http://keystonep5.sourceforge.net/reference/index.html">keystonep5.sourceforge.net/reference/index.html</a>.  </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../processing-syphon/" class="btn btn-neutral float-right" title="Processing and Syphon">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../heavym-live/" class="btn btn-neutral" title="HeavyM Live"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright (c) 2016 Fabian Morón Zirfas & University of Applied Sciences Potsdam (Germany). Please report any issue <a href="https://github.com/FH-Potsdam/doing-projection-mapping/issues">here</a> on GitHub.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../heavym-live/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../processing-syphon/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

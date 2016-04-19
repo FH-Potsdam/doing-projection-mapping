@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Fabian 'fabiantheblind' Morón Zirfas">
+  
+  <title>HeavyM Live - Doing Projection Mapping</title>
+  
+
+  <link rel="shortcut icon" href="../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HeavyM Live";
+    var mkdocs_page_input_path = "heavym-live.md";
+    var mkdocs_page_url = "/heavym-live/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Doing Projection Mapping</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../workflows/">Workflows</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../heavym-beta/">HeavyM Beta</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">HeavyM Live</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#basic-usage">Basic Usage</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#adding-faces">Adding Faces</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#adding-effects">Adding Effects</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#loading-media">Loading Media</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#loading-syphon-input">Loading Syphon Input</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#additional-notes">Additional Notes</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../processing-keystone/">Processing and Keystone</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../processing-syphon/">Processing and Syphon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../qc-syphon/">Quartz Composer and Syphon</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../links/">Links</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Doing Projection Mapping</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>HeavyM Live</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>HeavyM Live is the extended version of HeavyM Beta. At this point we want to thank the HeavyM Team again for providing us with some trial licenses for our workshop. It provides a lot more functionality than the Beta version. Connect your projector. After you downloaded and installed HeavyM Live you get the window below on startup.  </p>
+<p><img alt="" src="../images/heavym-live-ui.png" />  </p>
+<h6 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h6>
+<p>The application consists of two windows. The editor window and the projection window. To get the projection window up and running you need to connect your window and enable your projector by clicking on the projector icon on the top of the window. You will be presented with a screen selection. Select the one that is your secondary screen and hit okay. Your secondary screen should now be a black fullscreen window.  </p>
+<p><img alt="" src="../images/heavym-live-ui-projector-selection.png" />  </p>
+<h6 id="adding-faces">Adding Faces<a class="headerlink" href="#adding-faces" title="Permanent link">&para;</a></h6>
+<p>Now you can now start dragging and droping faces onte the editor window. There are the possibility to add:  </p>
+<ul>
+<li>Triangles</li>
+<li>Rectangles</li>
+<li>Ellipses</li>
+<li>Polygons (free forms)  </li>
+<li>Media overlays (we will look into that in the section <a href="#loading-media">Loading Media</a>)</li>
+</ul>
+<p>For easier handling there is button for activating magnetic corners on the faces. it makes your faces snap together and prevents having unwanted holes. Start building your object. You can delete unwanted faces just by selcting them and hitting ⌫ (delete). To move your editor window around you can hold space.  </p>
+<p><img alt="" src="../images/heavym-adding-faces.gif" />  </p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Don&rsquo;t forget to save your project regulary to prevent data loss.  </p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Decscription</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>right click</td>
+<td>options for copy pasting, deleting and group assignment</td>
+</tr>
+<tr>
+<td>⌫</td>
+<td>deletes the selected face</td>
+</tr>
+<tr>
+<td>Space + Mouse movement</td>
+<td>moves the editor area</td>
+</tr>
+</tbody>
+</table>
+<h6 id="adding-effects">Adding Effects<a class="headerlink" href="#adding-effects" title="Permanent link">&para;</a></h6>
+<p>When you are done adding your faces you can add effects to them. As default only the borders are activated. </p>
+<p><a href="../images/heavym-live-ui-with-faces.png"><img alt="" src="../images/heavym-live-ui-with-faces.png" /></a>  </p>
+<p>On the right side of the editor window you find options for, borders, fills, shaders and structure. Explore them at will. For our particular use the fill settings are the most important.<br />
+You can activate or deactivate all the effects by clicking the according icon when the additional panel is expanded. It will have an little ✓ mark when it is activated. See the animation below.  </p>
+<p><a href="../images/heavym-adding-effect.gif"><img alt="" src="../images/heavym-adding-effect.gif" /></a>  </p>
+<h6 id="loading-media">Loading Media<a class="headerlink" href="#loading-media" title="Permanent link">&para;</a></h6>
+<p>To add video overlays to your faces you need to add a player face into your scene. Drag and drop from the top bar the player object onto your scene. This gives you a rectangular field and opens the media panel on the left side of the window. Hit the little plus sign on the media section and browse for a video.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We used a H264 compression in a .mov container. If you try other codecs we would be happy to hear from you.  </p>
+</div>
+<p>When the media is loaded and you&rsquo;ve adjusted the bounds of your video hit the play button and your video will start playing in an infinite loop. <em>Currently there is no way to start and stop several videos at once. We hope this will be a feature soon.</em><br />
+See the animation below.</p>
+<p><a href="../images/heavym-adding-media.gif"><img alt="" src="../images/heavym-adding-media.gif" /></a>  </p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You need to activate the fill property on the right side for all the faces that should have the video as fill. If you just want the whole video on the screen without being cropped by the faces. Hit the &ldquo;activate on top&rdquo; button on top of the panel.  </p>
+</div>
+<h6 id="loading-syphon-input">Loading Syphon Input<a class="headerlink" href="#loading-syphon-input" title="Permanent link">&para;</a></h6>
+<p>To have input from other sources, e.g. After Effects or Processing you just need to follow the instructions in the <a href="#loading-media">Loading Media section</a>. On the media panel on the bottom is a area for Syphon input. Select in the little dropdown menu the Syphon server you have already running and hit the play button. Now you should have the frames of your external application on your object. For further information on using Syphon go to the <a href="../syphon/">Syphon section.</a>  </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Starting the input <strong>without</strong> having a Syphon server running might crash HeavyM.  </p>
+</div>
+<h6 id="additional-notes">Additional Notes<a class="headerlink" href="#additional-notes" title="Permanent link">&para;</a></h6>
+<p>There are several more things you can do. We only scratched only the surface of HeavyM. (Explore them at will.)  </p>
+<ul>
+<li>Add several scenes to have different configurations for your effects and overlays.  </li>
+<li>Run the scenes per beat.  </li>
+<li>Add a grid to transform all the faces within that grid at once.  </li>
+<li>Assigning faces to groups (allows to have different effect configurations for face groups)</li>
+<li>Locking faces and media overlays(for better handling).  </li>
+<li>Animate borders, lines within the faces shaders and effects.</li>
+<li>Drive effects from audio or midi input.</li>
+</ul>
+<p><a href="../images/heavym-scenes.gif"><img alt="" src="../images/heavym-scenes.gif" /></a>  </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../processing-keystone/" class="btn btn-neutral float-right" title="Processing and Keystone">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../heavym-beta/" class="btn btn-neutral" title="HeavyM Beta"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright (c) 2016 Fabian Morón Zirfas & University of Applied Sciences Potsdam (Germany). Please report any issue <a href="https://github.com/FH-Potsdam/doing-projection-mapping/issues">here</a> on GitHub.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../heavym-beta/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../processing-keystone/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
