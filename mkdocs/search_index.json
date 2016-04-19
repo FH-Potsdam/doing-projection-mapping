@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Doing Projection Mapping\n\n\n  \n\n\nIntroduction\n\n\nThis document is a write-down for a workshop by \nFabian Mor\u00f3n Zirfas\n @ \nthe University of Applied Sciences Potsdam (Germany)\n as part of the seminar \nDatenobjekte\n (data objects) by \nProfessor Boris M\u00fcller\n (a.k.a \n@borism\n on Twitter). We will explore the basics possibilites we have in the field of projection mapping. \nThis is still work in progress, there might be\n \ud83d\udc1b\n,\n \ud83d\udc09 \nand\n \ud83d\udc7e\n.\n  \n\n\nPrerequisites\n\n\n\n\na computer  \n\n\na projector  \n\n\nProcessing  \n\n\nProcessing Keystone library\n\n\nProcessing Syphon library\n\n\nHeavyM  \n\n\n\n\n\n\nNote\n\n\nSome of these are optional. Depending on which workflow you are going to use.  \n\n\n\n\nSource\n\n\nThese docs are written using \nmkdocs\n using the \nreadthedocs\n theme by Fabian Mor\u00f3n Zirfas with \u2665. See the source on \nGitHub.", 
+            "text": "Doing Projection Mapping\n\n\n  \n\n\nIntroduction\n\n\nThis document is a write-down for a workshop by \nFabian Mor\u00f3n Zirfas\n @ \nthe University of Applied Sciences Potsdam (Germany)\n as part of the seminar \nDatenobjekte\n (data objects) by \nProfessor Boris M\u00fcller\n (a.k.a \n@borism\n on Twitter). We will explore the basics possibilites we have in the field of projection mapping. \nThis is still work in progress, there might be\n \ud83d\udc1b\n,\n \ud83d\udc09 \nand\n \ud83d\udc7e\n.\n  \n\n\nPrerequisites\n\n\n\n\na computer  \n\n\na projector  \n\n\nProcessing  \n\n\nProcessing Keystone library\n\n\nProcessing Syphon library\n\n\nHeavyM  \n\n\n\n\n\n\nNote\n\n\nSome of these are optional. Depending on which workflow you are going to use.  \n\n\n\n\nSource\n\n\nThese docs are written using \nmkdocs\n using the \nreadthedocs\n theme by Fabian Mor\u00f3n Zirfas with \u2665. See the source on \nGitHub.\n  \n\n\nContribution \n Issues\n\n\nPlease file any issues \nhere\n on GitHub. Contributions and Pull Requests are welcome. For quick questions you can also visit our gitter chat.  \n\n\n  \n\n\nCreating gifs\n\n\nThe gifs in these docs are created by transfomring a screenrecord with ffmpeg to a sequence. This sequence then gets transformed with ImageMagick to a gif. ffmpeg and ImageMagick can be installde using \nhomebrew\n.  \n\n\nInstall brew like discribed on their site. Then run:\n\n\nbrew install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-frei0r --with-libass --with-libvo-aacenc --with-libvorbis --with-libvpx --with-opencore-amr --with-openjpeg --with-opus --with-rtmpdump --with-schroedinger --with-speex --with-theora --with-tools\nbrew install imagemagick\n\n\n\nYou should be good to go. \n\n\nffmpeg -i blender-ui.mp4 -r 20 -vcodec ppm  -s800x600 seq/out%05d.png\nconvert -layers Optimize seq/out*.png ../images/blender-ui.gif", 
             "title": "Home"
         }, 
         {
@@ -24,6 +24,16 @@
             "location": "/#source", 
             "text": "These docs are written using  mkdocs  using the  readthedocs  theme by Fabian Mor\u00f3n Zirfas with \u2665. See the source on  GitHub.", 
             "title": "Source"
+        }, 
+        {
+            "location": "/#contribution-issues", 
+            "text": "Please file any issues  here  on GitHub. Contributions and Pull Requests are welcome. For quick questions you can also visit our gitter chat.", 
+            "title": "Contribution &amp; Issues"
+        }, 
+        {
+            "location": "/#creating-gifs", 
+            "text": "The gifs in these docs are created by transfomring a screenrecord with ffmpeg to a sequence. This sequence then gets transformed with ImageMagick to a gif. ffmpeg and ImageMagick can be installde using  homebrew .    Install brew like discribed on their site. Then run:  brew install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-frei0r --with-libass --with-libvo-aacenc --with-libvorbis --with-libvpx --with-opencore-amr --with-openjpeg --with-opus --with-rtmpdump --with-schroedinger --with-speex --with-theora --with-tools\nbrew install imagemagick  You should be good to go.   ffmpeg -i blender-ui.mp4 -r 20 -vcodec ppm  -s800x600 seq/out%05d.png\nconvert -layers Optimize seq/out*.png ../images/blender-ui.gif", 
+            "title": "Creating gifs"
         }, 
         {
             "location": "/workflows/", 
