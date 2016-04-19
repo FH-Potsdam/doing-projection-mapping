@@ -86,7 +86,7 @@ This example shows how to use a video inside of your surface. You can play/pause
 
 The MultiSurface example shows the usage of two surfaces that build a corner. All the key strokes from the CornerPin examples apply.  
 
-![](cornerpin-keystone-multisurface-processing.png)  
+![](images/cornerpin-keystone-multisurface-processing.png)  
 
 ### Reference  
 
