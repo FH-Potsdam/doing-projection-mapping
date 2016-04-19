@@ -62,7 +62,7 @@ See the animation below.
 
 #### Loading Syphon Input  
 
-To have input from other sources, e.g. After Effects or Processing you just need to follow the instructions in the [Loading Media section](#loading-media). On the media panel on the bottom is a area for Syphon input. Select in the little dropdown menu the Syphon server you have already running and hit the play button. Now you should have the frames of your external application on your object. For further information on using Syphon go to the [Syphon section.](syphon/)  
+To have input from other sources, e.g. After Effects or Processing you just need to follow the instructions in the [Loading Media section](#loading-media). On the media panel on the bottom is a area for Syphon input. Select in the little dropdown menu the Syphon server you have already running and hit the play button. Now you should have the frames of your external application on your object. For further information on using Syphon go to the section [Processing Syphon](processing-syphon/) or [Quartz Composer Syphon](qc-syphon/).  
 
 !!!warning
     Starting the input __without__ having a Syphon server running might crash HeavyM.  
