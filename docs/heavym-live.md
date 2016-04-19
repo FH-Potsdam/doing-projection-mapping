@@ -25,11 +25,11 @@ For easier handling there is button for activating magnetic corners on the faces
 !!!hint
     Don't forget to save your project regulary to prevent data loss.  
 
-| Action      | Decscription                                            |
-| :---        | :---                                                    |
-| right click | options for copy pasting, deleting and group assignment |
-| ⌫           | deletes the selected face                               |
-| Space       | moves the editor area                                   |
+| Action                 | Decscription                                            |
+| :---                   | :---                                                    |
+| right click            | options for copy pasting, deleting and group assignment |
+| ⌫                      | deletes the selected face                               |
+| Space + Mouse movement | moves the editor area                                   |
 
 
 #### Adding Effects  
@@ -40,7 +40,7 @@ When you are done adding your faces you can add effects to them. As default only
 [![](images/heavym-live-ui-with-faces.png)](images/heavym-live-ui-with-faces.png)  
 
 On the right side of the editor window you find options for, borders, fills, shaders and structure. Explore them at will. For our particular use the fill settings are the most important.  
-You can activate or deactivate all the effects by clicking the according icon when the additional panel is expanded. See the animation below.  
+You can activate or deactivate all the effects by clicking the according icon when the additional panel is expanded. It will have an little ✓ mark when it is activated. See the animation below.  
 
 [![](images/heavym-adding-effect.gif)](images/heavym-adding-effect.gif)  
 
@@ -62,7 +62,7 @@ See the animation below.
 
 #### Loading Syphon Input  
 
-To have input from other sources, e.g. After Effects or Processing you just need to follow the instructions in the [Loading Media section](#loading-media). On the media panel on the bottom is a area for Syphon. Select in the little dropdown menu the Syphon server you have already running and hit the play button. Now you should have the frames of your external application on your object. For further information on using Syphon go to the [Syphon section.](syphon/)  
+To have input from other sources, e.g. After Effects or Processing you just need to follow the instructions in the [Loading Media section](#loading-media). On the media panel on the bottom is a area for Syphon input. Select in the little dropdown menu the Syphon server you have already running and hit the play button. Now you should have the frames of your external application on your object. For further information on using Syphon go to the [Syphon section.](syphon/)  
 
 !!!warning
     Starting the input __without__ having a Syphon server running might crash HeavyM.  
@@ -72,7 +72,7 @@ To have input from other sources, e.g. After Effects or Processing you just need
 There are several more things you can do. We only scratched only the surface of HeavyM. (Explore them at will.)  
 
 - Add several scenes to have different configurations for your effects and overlays.  
-- Run the scenes per beat.
+- Run the scenes per beat.  
 - Add a grid to transform all the faces within that grid at once.  
 - Assigning faces to groups (allows to have different effect configurations for face groups)
 - Locking faces and media overlays(for better handling).  

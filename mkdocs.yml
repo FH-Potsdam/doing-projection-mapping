@@ -1,6 +1,6 @@
 site_name: Doing Projection Mapping
 # Copyright
-copyright: Copyright (c) 2016 Fabian Morón Zirfas & University of Applied Sciences Potsdam (Germany)
+copyright: Copyright (c) 2016 Fabian Morón Zirfas & University of Applied Sciences Potsdam (Germany). Please report any issue <a href="https://github.com/FH-Potsdam/doing-projection-mapping/issues">here</a> on GitHub.
 site_author: Fabian 'fabiantheblind' Morón Zirfas
 repo_url: https://github.com/FH-Potsdam/doing-projection-mapping
 site_url: http://fh-potsdam.github.io/doing-projection-mapping/
@@ -13,8 +13,9 @@ pages:
 - Workflows: workflows.md
 - HeavyM Beta: heavym-beta.md
 - HeavyM Live: heavym-live.md
-- Processing: processing.md
-- Syphon: syphon.md
+- Processing and Keystone: processing-keystone.md
+- Processing and Syphon: processing-syphon.md
+- Quartz Composer and Syphon: qc-syphon.md
 - Links: links.md
 
 theme: readthedocs

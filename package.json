@@ -1,0 +1,24 @@
+{
+  "name": "doing-projection-mapping",
+  "version": "1.0.0",
+  "description": "Doing Projection Mapping @ University of Applied Sciences Potsdam (Germany)",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "deploy":"mkdocs gh-deploy --clean -v",
+    "serve":"mkdocs serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FH-Potsdam/doing-projection-mapping.git"
+  },
+  "keywords": [],
+  "author": "Fabian 'fabiantheblind' Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FH-Potsdam/doing-projection-mapping/issues"
+  },
+  "homepage": "https://github.com/FH-Potsdam/doing-projection-mapping#readme"
+}
