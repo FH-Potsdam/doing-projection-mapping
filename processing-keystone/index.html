@@ -108,7 +108,7 @@
                 <li class="toctree-l3"><a href="#ex-cornerpinmultisurface">Ex. CornerPinMultiSurface</a></li>
                 
             
-                <li class="toctree-l3"><a href="#reference">Reference</a></li>
+                <li class="toctree-l3"><a href="#keystone-reference">Keystone Reference</a></li>
                 
             
             </ul>
@@ -171,8 +171,9 @@
           <div role="main">
             <div class="section">
               
-                <h6 id="processing-setup">Processing Setup<a class="headerlink" href="#processing-setup" title="Permanent link">&para;</a></h6>
-<p>To create a mapping from within processing we will use the <a href="http://keystonep5.sourceforge.net/">Keystone</a> library. Download and install Processing 3 and go to &ldquo;Sketch &gt; Import Library… &gt; Add Library&rdquo;. Search in the Library Manager for &ldquo;keystone&rdquo;. Hit install and restart Processing.  </p>
+                <p>The <a href="http://keystonep5.sourceforge.net/">Keystone</a> library, written by <a href="http://www.deadpixel.ca/">David Bouchard</a>, is a video projection mapping library. Currently, it allows you to warp your Processing sketches onto any flat surface by using corner pin keystoning, regardless of your projector&rsquo;s position and orientation.  </p>
+<h6 id="processing-setup">Processing Setup<a class="headerlink" href="#processing-setup" title="Permanent link">&para;</a></h6>
+<p>Download and install Processing 3 and go to &ldquo;Sketch &gt; Import Library… &gt; Add Library&rdquo;. Search in the Library Manager for &ldquo;keystone&rdquo;. Hit install and restart Processing.  </p>
 <p><img alt="" src="../images/add-lib-processing.png" />  </p>
 <p>Now you should find under &ldquo;File &gt; Examples &gt; Contributed Libraries&rdquo; a folder called Keystone with an example called &ldquo;CornerPin&rdquo;. </p>
 <h6 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h6>
@@ -206,7 +207,7 @@
 <p>The firs parameter is the <code>width</code>, the second the <code>height</code> and the third is the <code>resolution</code> of the surface. These values need to correspond with the next parameter we need to adjust. </p>
 <pre><code>offscreen = createGraphics(400, 300, P3D);
 </code></pre>
-<p>This is the size of the graphics we are going to generate within processing. We don&rsquo;t render anything directly into the window of the application. Instead the library takes a offscreen rendered graphic and distorts this in the cornerpin surface. That means every graphical output of Processing that we want to have distorted needs to be called as a child of the <code>offscreen</code> <code>PGraphics</code> object. See the <a href="https://processing.org/reference/createGraphics_.html">Processing reference</a> for further insight.<br />
+<p>This is the size of the graphics we are going to generate within Processing. We don&rsquo;t render anything directly into the window of the application. Instead the library takes a offscreen rendered graphic and distorts this in the cornerpin surface. That means every graphical output of Processing that we want to have distorted needs to be called as a child of the <code>offscreen</code> <code>PGraphics</code> object. See the <a href="https://processing.org/reference/createGraphics_.html">Processing reference</a> for further insight.<br />
 The following lines in the sketch get the transformed mouse position and add the graphical output to the offscreen buffer.  </p>
 <pre><code>PVector surfaceMouse = surface.getTransformedMouse();
 offscreen.beginDraw();
@@ -254,6 +255,29 @@ offscreen.endDraw();
 <p>In the repository you can find three examples for processing. To run them you need to <a href="https://github.com/FH-Potsdam/doing-projection-mapping/archive/master.zip">download</a> the whole folder and open the .pde files in Processing. See the examples/Processing/Keystone directory for the sketches.  </p>
 <h6 id="ex-cornerpin">Ex. CornerPin<a class="headerlink" href="#ex-cornerpin" title="Permanent link">&para;</a></h6>
 <p>This is the basic example taken from the Keystone library. It distorts one surface as explained above.  </p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>save scene</td>
+</tr>
+<tr>
+<td>l</td>
+<td>load scene</td>
+</tr>
+<tr>
+<td>c</td>
+<td>edit cornerpins</td>
+</tr>
+</tbody>
+</table>
+<p>Read the source code <a href="https://github.com/FH-Potsdam/doing-projection-mapping/blob/master/examples/Processing/Keystone/CornerPin/CornerPin.pde">here</a>.  </p>
 <h6 id="ex-cornerpinvideo">Ex. CornerPinVideo<a class="headerlink" href="#ex-cornerpinvideo" title="Permanent link">&para;</a></h6>
 <p>This example shows how to use a video inside of your surface. You can play/pause it by hitting &ldquo;p&rdquo;.  </p>
 <p><img alt="" src="../images/cornerpin-keystone-video-processing.png" />  </p>
@@ -283,10 +307,34 @@ offscreen.endDraw();
 </tr>
 </tbody>
 </table>
+<p>Read the source code <a href="https://github.com/FH-Potsdam/doing-projection-mapping/blob/master/examples/Processing/Keystone/CornerPinVideo/CornerPinVideo.pde">here</a>.  </p>
 <h6 id="ex-cornerpinmultisurface">Ex. CornerPinMultiSurface<a class="headerlink" href="#ex-cornerpinmultisurface" title="Permanent link">&para;</a></h6>
 <p>The MultiSurface example shows the usage of two surfaces that build a corner. All the key strokes from the CornerPin examples apply.  </p>
 <p><img alt="" src="../images/cornerpin-keystone-multisurface-processing.png" />  </p>
-<h6 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h6>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>s</td>
+<td>save scene</td>
+</tr>
+<tr>
+<td>l</td>
+<td>load scene</td>
+</tr>
+<tr>
+<td>c</td>
+<td>edit cornerpins</td>
+</tr>
+</tbody>
+</table>
+<p>Read the source code <a href="https://github.com/FH-Potsdam/doing-projection-mapping/blob/master/examples/Processing/Keystone/CornerPinMultiSurface/CornerPinMultiSurface.pde">here</a>.  </p>
+<h6 id="keystone-reference">Keystone Reference<a class="headerlink" href="#keystone-reference" title="Permanent link">&para;</a></h6>
 <p>For an deeper insight into the Keystone library. Go to <a href="http://keystonep5.sourceforge.net/reference/index.html">keystonep5.sourceforge.net/reference/index.html</a>.  </p>
               
             </div>
