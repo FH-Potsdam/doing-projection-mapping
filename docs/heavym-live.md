@@ -4,7 +4,7 @@ HeavyM Live is the extended version of HeavyM Beta. At this point we want to tha
 
 ### Basic Usage
 
-The application consists of two windows. The editor window and the projection window. To get the projection window up and running you need to connect your window and enable your projector by clicking on the projector icon on the top of the window. You will be presented with a screen selection. Select the one that is your secondary screen and hit okay. Your secondary screen should now be a black fullscreen window.  
+The application consists of two windows. The editor window and the projection window. To get the projection window up and running you need to connect and enable your projector by clicking on the projector icon on the top of the window. You will be presented with a screen selection. Select the one that is your secondary screen and hit okay. Your secondary screen should now be a black fullscreen window.  
 
 ![](images/heavym-live-ui-projector-selection.png)  
 
@@ -46,18 +46,18 @@ You can activate or deactivate all the effects by clicking the according icon wh
 
 #### Loading Media  
 
-To add video overlays to your faces you need to add a player face into your scene. Drag and drop from the top bar the player object onto your scene. This gives you a rectangular field and opens the media panel on the left side of the window. Hit the little plus sign on the media section and browse for a video.  
+To add video overlays to your faces you need to add a player face into your scene. Drag and drop (from the top bar) the player object onto your scene. This gives you a rectangular field and opens the media panel on the left side of the window. Hit the little plus sign on the media section and browse for a video.  
 
 !!!note
     We used a H264 compression in a .mov container. If you try other codecs we would be happy to hear from you.  
 
 When the media is loaded and you've adjusted the bounds of your video hit the play button and your video will start playing in an infinite loop. _Currently there is no way to start and stop several videos at once. We hope this will be a feature soon._  
-See the animation below.
+See the animation below.  
 
 [![](images/heavym-adding-media.gif)](images/heavym-adding-media.gif)  
 
 !!!hint
-    You need to activate the fill property on the right side for all the faces that should have the video as fill. If you just want the whole video on the screen without being cropped by the faces. Hit the "activate on top" button on top of the panel.  
+    You need to activate the fill property on the right side for all the faces that should have the video as fill. If you just want the whole video on the screen without being cropped by the faces. Hit the "activate on top" button on top of the panel on the left side.  
 
 
 #### Loading Syphon Input  
@@ -69,7 +69,7 @@ To have input from other sources, e.g. After Effects or Processing you just need
 
 #### Additional Notes  
 
-There are several more things you can do. We only scratched only the surface of HeavyM. (Explore them at will.)  
+There are several more things you can do. We only scratched the surface of HeavyM. You can for example:  
 
 - Add several scenes to have different configurations for your effects and overlays.  
 - Run the scenes per beat.  

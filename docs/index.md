@@ -15,7 +15,8 @@ This document is a write-down for a workshop by [Fabian Morón Zirfas](https://g
 - a projector  
 - Processing  
 - Processing Keystone library
-- Processing Syphon library
+- Processing Syphon library (Mac)  
+- Processing Spout Setup (Win)  
 - HeavyM  
 
 !!!note

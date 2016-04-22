@@ -31,7 +31,7 @@ The firs parameter is the `width`, the second the `height` and the third is the 
 
     offscreen = createGraphics(400, 300, P3D);
 
-This is the size of the graphics we are going to generate within processing. We don't render anything directly into the window of the application. Instead the library takes a offscreen rendered graphic and distorts this in the cornerpin surface. That means every graphical output of Processing that we want to have distorted needs to be called as a child of the `offscreen` `PGraphics` object. See the [Processing reference](https://processing.org/reference/createGraphics_.html) for further insight.  
+This is the size of the graphics we are going to generate within Processing. We don't render anything directly into the window of the application. Instead the library takes a offscreen rendered graphic and distorts this in the cornerpin surface. That means every graphical output of Processing that we want to have distorted needs to be called as a child of the `offscreen` `PGraphics` object. See the [Processing reference](https://processing.org/reference/createGraphics_.html) for further insight.  
 The following lines in the sketch get the transformed mouse position and add the graphical output to the offscreen buffer.  
 
     PVector surfaceMouse = surface.getTransformedMouse();
@@ -71,6 +71,14 @@ In the repository you can find three examples for processing. To run them you ne
 
 This is the basic example taken from the Keystone library. It distorts one surface as explained above.  
 
+| Key  | Description          |
+| :--- | :---                 |
+| s    | save scene           |
+| l    | load scene           |
+| c    | edit cornerpins      |
+
+Read the source code [here](https://github.com/FH-Potsdam/doing-projection-mapping/blob/master/examples/Processing/Keystone/CornerPin/CornerPin.pde).  
+
 #### Ex. CornerPinVideo
 
 This example shows how to use a video inside of your surface. You can play/pause it by hitting "p".  
@@ -84,12 +92,22 @@ This example shows how to use a video inside of your surface. You can play/pause
 | c    | edit cornerpins      |
 | p    | play/pause the video |
 
+Read the source code [here](https://github.com/FH-Potsdam/doing-projection-mapping/blob/master/examples/Processing/Keystone/CornerPinVideo/CornerPinVideo.pde).  
+
 #### Ex. CornerPinMultiSurface
 
 The MultiSurface example shows the usage of two surfaces that build a corner. All the key strokes from the CornerPin examples apply.  
 
 ![](images/cornerpin-keystone-multisurface-processing.png)  
 
-### Reference  
+| Key  | Description          |
+| :--- | :---                 |
+| s    | save scene           |
+| l    | load scene           |
+| c    | edit cornerpins      |
+
+Read the source code [here](https://github.com/FH-Potsdam/doing-projection-mapping/blob/master/examples/Processing/Keystone/CornerPinMultiSurface/CornerPinMultiSurface.pde).  
+
+### Keystone Reference  
 
 For an deeper insight into the Keystone library. Go to [keystonep5.sourceforge.net/reference/index.html](http://keystonep5.sourceforge.net/reference/index.html).  

@@ -44,9 +44,9 @@ You can now add effects to your faces (right hand side, between "Library" and "A
 To add a video or an image you have to add an overlay object. With the scene tab selected you change into the adding mode (the pen on the toolbar) and click once into the main window. Switch to the editing mode (bounding box below the pen) and make the overlay fit your needs. This will hold the media you are adding. Select the media browser on the right and just drag and drop images or videos onto the overlay.  
 
 !!!note
-    The video will start playing right away. Unfortunately there is no way to start stop videos.
-    This is the same for the Live version. Hopefully this feature will be added soon.
-    A H264 compression works fine.  
+    ☛ The video will start playing right away.  
+    ☛ Unfortunately there is no way to start stop videos. This is the same for the Live version. Hopefully this feature will be added soon.  
+    ☛ A H264 compression works fine.  
 
 
 
