@@ -1,8 +1,8 @@
-Syphon is a technology that allows applications to share frames. In our example we will use Processing to send simple animations to HeavyM. You have always a "Syphon Server" and a "Syphon Client". In our case the server is our Processing applet and the client is HeavyM.  
+Syphon is a framework, written by [Tom Butterworth](http://kriss.cx/tom/) and [Anton Marini](http://vade.info/), that allows applications to share frames (full frame rate video or stills) with one another in realtime. In our example we will use Processing to send simple animations to HeavyM. You always will have a "Syphon Server" and a "Syphon Client". In our case the server is our Processing applet and the client is HeavyM.  
 
 ### Processing Setup  
 
-To send frames from  Processing we will use the Syphon library. Download and install Processing 3 and go to "Sketch > Import Library… > Add Library". Search in the Library Manager for "Syphon". Hit install and restart Processing.  
+Download and install Processing 3 and go to "Sketch > Import Library… > Add Library". Search in the Library Manager for "Syphon". Hit install and restart Processing.  
 
 [![](images/add-lib-syphon-processing.png)](images/add-lib-syphon-processing.png)  
 
@@ -26,3 +26,12 @@ To be able to control videos from key inputs we can use Processing to play the v
 [![](images/syphon-processing-player.gif)](images/syphon-processing-player.gif)  
 
 Read the [source code here](https://github.com/FH-Potsdam/doing-projection-mapping/blob/master/examples/Processing/Syphon/SyphonMoviePlayer/SyphonMoviePlayer.pde).  
+
+#### SyphonTexturedShape
+
+This sketch shows how to load an image as a texture for a distorted PShape. The frames also get written into an offscreen buffer. Then they are passed on to the client(s). This allows us to distort an image or shape in Processing before sending it to HeavyM.  
+
+[![](images/heavym-projection-SyphonTexturedShape.png)](images/heavym-projection-SyphonTexturedShape.png)  
+
+[![](images/processing-window-SyphonTexturedShape.png)](images/processing-window-SyphonTexturedShape.png)  
+

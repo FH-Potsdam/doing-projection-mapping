@@ -1,6 +1,8 @@
+The [Keystone](http://keystonep5.sourceforge.net/) library, written by [David Bouchard](http://www.deadpixel.ca/), is a video projection mapping library. Currently, it allows you to warp your Processing sketches onto any flat surface by using corner pin keystoning, regardless of your projector's position and orientation.  
+
 ### Processing Setup 
 
-To create a mapping from within processing we will use the [Keystone](http://keystonep5.sourceforge.net/) library. Download and install Processing 3 and go to "Sketch > Import Library… > Add Library". Search in the Library Manager for "keystone". Hit install and restart Processing.  
+Download and install Processing 3 and go to "Sketch > Import Library… > Add Library". Search in the Library Manager for "keystone". Hit install and restart Processing.  
 
 ![](images/add-lib-processing.png)  
 
