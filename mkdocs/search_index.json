@@ -201,6 +201,11 @@
             "title": "Quartz Composer Setup"
         }, 
         {
+            "location": "/screener-syphon/", 
+            "text": "There might the the wish to use applications that are not Syphon enabled. For this we can use \nScreener\n. Screener is a OSX application for capturing whole screens.  \n\n\nTHe application needs to be compiled with XCode on your machine.  \n\n\n  \n\n\nMore to come\u2026", 
+            "title": "Screener and Syphon"
+        }, 
+        {
             "location": "/links/", 
             "text": "HeavyM\n  \n\n\n\n\nProcessing.org\n\n\nProjection Mapping Central - Your one-stop shop for projection mapping and video mapping\n  \n\n\n\n\n\n\nSyphon\n  \n\n\n\n\nSpout\n  \n\n\n\n\nProcessing libraries\n\n\n\n\nSyphon/Processing Library \u00b7 GitHub\n  \n\n\nkeystone/Processing Library \u00b7 Sourceforge", 
             "title": "Links"
