@@ -16,6 +16,7 @@ pages:
 - Processing and Keystone: processing-keystone.md
 - Processing and Syphon: processing-syphon.md
 - Quartz Composer and Syphon: qc-syphon.md
+- Screener and Syphon: screener-syphon.md
 - Links: links.md
 
 theme: readthedocs
