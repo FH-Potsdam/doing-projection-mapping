@@ -11,3 +11,6 @@
 - [Syphon/Processing Library · GitHub](https://github.com/Syphon/Processing/releases)  
 - [keystone/Processing Library · Sourceforge](http://keystonep5.sourceforge.net/)  
 
+### Misc  
+
+- [How To Project On 3D Geometry vvvv](https://vvvv.org/documentation/how-to-project-on-3d-geometry)  
